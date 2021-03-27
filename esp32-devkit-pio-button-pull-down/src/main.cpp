@@ -9,14 +9,14 @@ void setup()
 {
   // Set GPIO pin as output for on-board LED
   pinMode(LEDPIN, OUTPUT);
-  // Set GPIO pin as input with pull-up resistor for button
-  pinMode(BUTTONPIN, INPUT_PULLUP);
+  // Set GPIO pin as input for button
+  pinMode(BUTTONPIN, INPUT);
 }
 
 void loop()
 {
   // If the button is pressed
-  if (digitalRead(BUTTONPIN) == LOW)
+  if (digitalRead(BUTTONPIN) == HIGH)
   {
     // Turn on LED
     digitalWrite(LEDPIN, HIGH);

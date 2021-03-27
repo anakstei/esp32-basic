@@ -7,14 +7,10 @@ void setup()
 {
   // Set GPIO pin as output for LED
   pinMode(LEDPIN, OUTPUT);
+  // Turn on LED
+  digitalWrite(LEDPIN, HIGH);
 }
 
 void loop()
 {
-  // Turn on LED
-  digitalWrite(LEDPIN, HIGH);
-  delay(500);
-  // Turn off LED
-  digitalWrite(LEDPIN, LOW);
-  delay(500);
 }
